@@ -129,6 +129,25 @@ public class InputHelper {
         } while (!valid);
         return userInput;
     }
+
+    public static String getPositiveNonZeroInt(Scanner scan, String prompt) {
+        boolean yes = false;
+
+        System.out.println(prompt);
+        do {
+            if (scan.hasNextLine()) {
+                yes = scan.nextLine();
+                if (yes.equalsIgnoreCase("r") {
+                    valid = true;
+                }
+            }
+            else{
+                System.out.println("Error - must enter integer value greater than 0");
+                scan.nextLine();
+            }
+        } while (!yes);
+        return userInput;
+    }
 }
 
 

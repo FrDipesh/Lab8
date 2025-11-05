@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Task3 {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int year = InputHelper.getRangedInt(scan,"Enter the year your born form 1950-2010", 1950,2010);
